@@ -10,6 +10,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      }
     ],
   },
   resolve: {
@@ -22,7 +26,7 @@ module.exports = {
   // [webpack-dev-server] "hot: true" automatically applies HMR plugin, you don't have to add it manually to your webpack configuration.
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-  	// contentBase is deprecated by static in webpack v5
+    // contentBase is deprecated by static in webpack v5
     contentBase: path.resolve(__dirname, "./dist"),
     hot: true,
   },
