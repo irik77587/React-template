@@ -4,3 +4,6 @@ The [Guide](https://medium.com/edonec/how-to-create-a-react-app-without-create-r
 
 ### Another thing to note
 I tested it on node 10.19.0 and webpack@5. It failed to load contentBase until I installed webpack-dev-server@3
+
+### Important Note
+Have you heard of [createapp.dev](https://createapp.dev)? If so, what are you doing here?
